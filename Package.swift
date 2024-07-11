@@ -4,8 +4,8 @@ import PackageDescription
 let package = Package(
     name: "FileCache",
     platforms: [
-        .iOS(.v10),
-        .macOS(.v10_12)
+        .iOS(.v13),
+        .macOS(.v10_15)
     ],
     products: [
         .library(
