@@ -2,22 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "FileCache",
-    platforms: [
-        .iOS(.v13),
-        .macOS(.v10_15)
-    ],
+    name: "FileCacheLibrary",
     products: [
         .library(
-            name: "FileCache",
-            targets: ["FileCache"]),
+            name: "FileCacheLibrary",
+            targets: ["FileCacheLibrary"]),
     ],
     targets: [
         .target(
-            name: "FileCache",
+            name: "FileCacheLibrary",
             dependencies: []),
         .testTarget(
-            name: "FileCacheTests",
-            dependencies: ["FileCache"]),
+            name: "FileCacheLibraryTests",
+            dependencies: ["FileCacheLibrary"]),
     ]
 )
